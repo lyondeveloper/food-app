@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Food App Native
 
-## Available Scripts
+Repository for app to make food and services delivery across the world with paypal and contries' local banks
+transactions.
 
-In the project directory, you can run:
+## Installation
 
-### `yarn start`
+Use the package manager NPM or Yarn to install the dependencies.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```bash
+npm install or yarn install
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Node Version
 
-### `yarn test`
+This project works under Expo framework to make universal react applications.
+The required node version to get the project up and running is 14.0.0.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies used
 
-### `yarn build`
+This project works under Expo framework for the mobile aplication (React Native)
+and classic ReactJS web implementation
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is both React Native and ReactJS projects in one big project.
+With the correct babel and webpack implementations, we've been able to combine the two worlds to dynamically import the correct components into web and mobile views.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## How to make PRs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The first thing you need to know is that all [SoftArs](http://softars.com/) projects will be or are in production and seek to maintain its structure across all the app.
 
-### `yarn eject`
+1. Make sure you've review your ENTIRE code and you are completly sure about your changes.
+2. Tag the [SoftArs](http://softars.com/) developers team to review your changes and approve them if they are good to go.
+3. Make sure your commits are descriptive about your current change, the correct way to make commits is: [JIRA_TICKET] - SHORT_TITLE.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Example:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+[FAN-233] - Added login button to submit and hit API
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+4. Make sure to add descriptive title and description once you've raised your PR.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Company
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[SoftArs](http://softars.com/)
