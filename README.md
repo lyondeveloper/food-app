@@ -5,7 +5,7 @@ transactions.
 
 ## Installation
 
-Use the package manager NPM or Yarn to install the dependencies.
+Use the packages manager NPM or Yarn to install the dependencies.
 
 ```bash
 npm install or yarn install
