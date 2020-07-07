@@ -22,11 +22,11 @@ This project works under Expo framework for the mobile aplication (React Native)
 and classic ReactJS web implementation
 
 This project is both React Native and ReactJS projects in one big project.
-With the correct babel and webpack implementations, we've been able to combine the two worlds to dynamically import the correct components into web and mobile views.
+With the correct babel and webpack implementations, we've been abled to combine the two worlds to dynamically import the correct components into web and mobile views.
 
 ## How to make PRs
 
-The first thing you need to know is that all [SoftArs](http://softars.com/) projects will be or are in production and seek to maintain its structure across all the app.
+The first thing you need to know is that all [SoftArs](http://softars.com/) projects will be or are in production and seek to maintain its structure across all the app, with that been said, you should follow the following steps:
 
 1. Make sure you've review your ENTIRE code and you are completly sure about your changes.
 2. Tag the [SoftArs](http://softars.com/) developers team to review your changes and approve them if they are good to go.
