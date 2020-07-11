@@ -16,6 +16,21 @@ npm install or yarn install
 This project works under Expo framework to make universal react applications.
 The required node version to get the project up and running is 14.0.0.
 
+## How To Run
+
+Use the correspondat node version and run 'yarn start' or 'npm start' for web view.
+Run yarn run app or npm run app for mobile view.
+
+You will need to have expo in your phone in order to run the mobile view, for more information on how to get expo with the local host environment running please follow this documentation https://docs.expo.io/get-started/create-a-new-app/#opening-the-app-on-your-phonetablet
+
+## ReduxJS Implementation
+
+With the implementation of ReduxJS Toolkit, a library that provides functions to avoid the complicated way to implement redux, we will only need single file to create a reducer and a global state (reference: inside core/redux/user/index) and this will work in both reactjs web and react native views.
+
+If you create new reducer, don't forget to put it inside /core/redux/rootReducer.js
+
+Then if you want to inject state in the components or dispatch an action to update the store, you will only need useDispatch and useSelector provided by react-redux (refence: web/src/components/landing-page/index)
+
 ## Technologies used
 
 This project works under Expo framework for the mobile aplication (React Native)

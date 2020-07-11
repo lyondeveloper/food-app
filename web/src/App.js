@@ -1,13 +1,8 @@
 import React from 'react';
-
-import Button from '../../core/components/button/container';
+import LandingPage from './components/landing-page';
 
 const App = () => {
-  return (
-    <main>
-      <Button />
-    </main>
-  );
+  return <LandingPage />;
 };
 
 export default App;
