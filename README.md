@@ -18,7 +18,7 @@ The required node version to get the project up and running is 14.0.0.
 
 ## How To Run
 
-Use the correspondat node version and run 'yarn start' or 'npm start' for web view.
+Use the correspondant node version and run 'yarn start' or 'npm start' for web view.
 Run yarn run app or npm run app for mobile view.
 
 You will need to have expo in your phone in order to run the mobile view, for more information on how to get expo with the local host environment running please follow this documentation https://docs.expo.io/get-started/create-a-new-app/#opening-the-app-on-your-phonetablet
@@ -54,6 +54,9 @@ Example:
 ```
 
 4. Make sure to add descriptive title and description once you've raised your PR.
+
+## General Recommendations and rules
+Please follow the next document: https://docs.google.com/document/d/1mN79G1QnL8YKKX9Rvtm3hYOKXeNl2m-4I1vb8vPrw7Q/edit?ts=5eade5b2
 
 ## Company
 
