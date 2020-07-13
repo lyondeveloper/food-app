@@ -3,6 +3,9 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
   isResponsive: false,
+  user: {
+    isAuthenticated: false,
+  },
 };
 
 const landingPage = createSlice({
