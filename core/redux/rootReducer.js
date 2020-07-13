@@ -1,5 +1,5 @@
-import user from './user';
+import landingPage from './landing-page';
 
 export default {
-  user,
+  landingPage,
 };
