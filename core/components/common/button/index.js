@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Button } from '@chakra-ui/core';
 
-const WebButton = ({ title, isLoading }) => {
+const WebButton = ({ title, isLoading = false }) => {
   return (
-    <Button color="white" backgroundColor="green.main" isLoading={isLoading} type="submit">
+    <Button color="white" backgroundColor="#48BB78" isLoading={isLoading} type="submit">
       {' '}
       {title}{' '}
     </Button>
@@ -13,11 +13,7 @@ const WebButton = ({ title, isLoading }) => {
 
 WebButton.propTypes = {
   title: PropTypes.string.isRequired,
-  isLoading: PropTypes.bool,
-};
-
-WebButton.defaultProps = {
-  isLoading: false,
+  isLoading: PropTypes.bool.isRequired,
 };
 
 export default WebButton;
