@@ -4,7 +4,7 @@ import { createSlice } from '@reduxjs/toolkit';
 const initialState = {
   isResponsive: false,
   user: {
-    isAuthenticated: false,
+    isAuthenticated: true,
   },
 };
 

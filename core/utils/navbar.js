@@ -8,13 +8,19 @@ export const navigation = {
   checkout: '/checkout',
 };
 
+export const constants = {
+  triggerComponent: 'triggerComponent',
+  link: 'link',
+  dropdown: 'dropdown',
+};
+
 export const webNavbar = Object.freeze([
   {
     id: 0,
     label: 'Search',
     name: 'searchBar',
     component: MdSearch,
-    type: 'triggerComponent',
+    type: constants.triggerComponent,
     onClick: () => {},
   },
 
@@ -23,7 +29,7 @@ export const webNavbar = Object.freeze([
     label: 'Cart',
     name: 'cart',
     component: MdShoppingCart,
-    type: 'triggerComponent',
+    type: constants.triggerComponent,
     onClick: () => {},
   },
 
@@ -31,7 +37,7 @@ export const webNavbar = Object.freeze([
     id: 2,
     label: 'Sign In',
     name: 'signIn',
-    type: 'link',
+    type: constants.link,
     path: navigation.signIn,
   },
 ]);
@@ -42,7 +48,7 @@ export const webNavbarAuthenticated = Object.freeze([
     label: 'Search',
     name: 'searchBar',
     component: MdSearch,
-    type: 'triggerComponent',
+    type: constants.triggerComponent,
     onClick: () => {},
   },
   {
@@ -50,7 +56,7 @@ export const webNavbarAuthenticated = Object.freeze([
     label: 'Cart',
     name: 'cart',
     component: MdShoppingCart,
-    type: 'triggerComponent',
+    type: constants.triggerComponent,
     onClick: () => {},
   },
 
@@ -59,7 +65,7 @@ export const webNavbarAuthenticated = Object.freeze([
     label: 'Account',
     name: 'account',
     component: MdAccountCircle,
-    type: 'triggerComponent',
+    type: constants.dropdown,
     onClick: () => {},
   },
 ]);
