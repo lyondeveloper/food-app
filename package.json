@@ -46,6 +46,7 @@
     "babel-preset-expo": "^8.2.3",
     "clean-webpack-plugin": "^3.0.0",
     "connect-history-api-fallback": "^1.6.0",
+    "core-js": "^2.6.11",
     "cross-env": "^7.0.2",
     "emotion-theming": "^10.0.27",
     "expo": "~38.0.8",
