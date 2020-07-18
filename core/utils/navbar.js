@@ -1,4 +1,5 @@
 import { MdSearch, MdShoppingCart, MdAccountCircle } from 'react-icons/md';
+import userMenu from './user';
 
 export const navigation = {
   home: '/',
@@ -12,6 +13,15 @@ export const constants = {
   triggerComponent: 'triggerComponent',
   link: 'link',
   dropdown: 'dropdown',
+  cart: 'cart',
+};
+
+const cartMenu = {
+  title: 'Your Order',
+  serviceName: 'Melt Pizzas',
+  serviceType: 'food',
+  type: 'menuGroup',
+  id: 0,
 };
 
 export const webNavbar = Object.freeze([
@@ -29,8 +39,9 @@ export const webNavbar = Object.freeze([
     label: 'Cart',
     name: 'cart',
     component: MdShoppingCart,
-    type: constants.triggerComponent,
+    type: constants.cart,
     onClick: () => {},
+    childMenu: { ...cartMenu },
   },
 
   {
@@ -56,8 +67,9 @@ export const webNavbarAuthenticated = Object.freeze([
     label: 'Cart',
     name: 'cart',
     component: MdShoppingCart,
-    type: constants.triggerComponent,
+    type: constants.cart,
     onClick: () => {},
+    childMenu: { ...cartMenu },
   },
 
   {
@@ -67,5 +79,6 @@ export const webNavbarAuthenticated = Object.freeze([
     component: MdAccountCircle,
     type: constants.dropdown,
     onClick: () => {},
+    childMenu: { ...userMenu },
   },
 ]);
