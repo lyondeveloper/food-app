@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Box, Flex } from '@chakra-ui/core';
-import Overlay from '../../overlay/index';
+import Overlay from '../overlay';
 
 const NavigationMenu = ({ children }) => {
   return (

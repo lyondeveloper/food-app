@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Spinner, Flex, Heading, Stack } from '@chakra-ui/core';
-import Overlay from '../overlay';
+import Overlay from '../common/overlay';
 
 const WebSpinner = ({ withOverlay = false }) => (
   <>
