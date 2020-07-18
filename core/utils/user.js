@@ -1,6 +1,6 @@
 import { MdAccountCircle, MdSettingsBrightness, MdWork } from 'react-icons/md';
 
-const userDropdownMenu = {
+const userMenu = {
   title: 'My Profile',
   type: 'menuGroup',
   icon: MdAccountCircle,
@@ -9,6 +9,7 @@ const userDropdownMenu = {
       id: 0,
       label: 'Account',
       name: 'account',
+      path: '/account',
       icon: MdAccountCircle,
     },
 
@@ -16,15 +17,17 @@ const userDropdownMenu = {
       id: 1,
       label: 'Orders',
       name: 'orders',
+      path: '/orders',
       icon: MdWork,
     },
     {
       id: 2,
       label: 'Settings',
       name: 'settings',
+      path: '/settings',
       icon: MdSettingsBrightness,
     },
   ],
 };
 
-export default userDropdownMenu;
+export default userMenu;
