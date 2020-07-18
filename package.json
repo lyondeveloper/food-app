@@ -1,7 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
+    "start": "node server.js",
     "build": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage",
@@ -50,6 +50,7 @@
     "emotion-theming": "^10.0.27",
     "expo": "~38.0.8",
     "expo-status-bar": "^1.0.2",
+    "express": "^4.17.1",
     "html-webpack-plugin": "^4.3.0",
     "koa-connect": "^2.1.0",
     "mini-css-extract-plugin": "^0.9.0",
