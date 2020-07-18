@@ -6,7 +6,7 @@ const app = express();
 
 const port = process.env.PORT || 5000;
 
-const publicPath = path.join(__dirname, './web/', 'public');
+const publicPath = path.join(__dirname, './', 'web/', 'public');
 
 app.use(express.static(publicPath));
 
