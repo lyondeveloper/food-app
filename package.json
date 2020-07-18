@@ -24,10 +24,13 @@
     "@reduxjs/toolkit": "^1.4.0",
     "axios": "^0.19.2",
     "clean-webpack-plugin": "^3.0.0",
+    "connect-history-api-fallback": "^1.6.0",
     "cross-env": "^7.0.2",
     "emotion-theming": "^10.0.27",
     "expo": "~38.0.8",
     "expo-status-bar": "^1.0.2",
+    "html-webpack-plugin": "^4.3.0",
+    "koa-connect": "^2.1.0",
     "mini-css-extract-plugin": "^0.9.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "prop-types": "^15.7.2",
@@ -45,6 +48,7 @@
     "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "redux-saga": "^1.1.3",
+    "script-ext-html-webpack-plugin": "^2.1.4",
     "styled-components": "^5.1.1",
     "terser-webpack-plugin": "^3.0.7",
     "webpack": "^4.43.0",
@@ -75,7 +79,6 @@
     "babel-plugin-transform-react-pure-class-to-function": "^1.0.1",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "babel-preset-expo": "~8.1.0",
-    "connect-history-api-fallback": "^1.6.0",
     "eslint": "^7.4.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
@@ -84,11 +87,8 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.20.3",
     "file-loader": "^6.0.0",
-    "html-webpack-plugin": "^4.3.0",
     "husky": "^4.2.5",
-    "koa-connect": "^2.1.0",
-    "prettier": "^2.0.5",
-    "script-ext-html-webpack-plugin": "^2.1.4"
+    "prettier": "^2.0.5"
   },
   "private": true
 }
