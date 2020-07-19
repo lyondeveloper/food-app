@@ -1,7 +1,7 @@
 {
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server --open",
     "build": "cross-env NODE_ENV=production webpack",
     "format": "prettier --write 'packages/**/*.js'",
     "test": "jest --watchAll --coverage",
@@ -92,5 +92,6 @@
     "husky": "^4.2.5",
     "prettier": "^2.0.5"
   },
-  "private": true
+  "private": false,
+  "proxy": "http://localhost:3000"
 }

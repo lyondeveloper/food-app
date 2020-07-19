@@ -8,11 +8,7 @@ const initialState = {
 const serviceSlice = createSlice({
   name: 'user',
   initialState,
-  reducers: {
-    increment: (state) => {
-      state.value += 3;
-    },
-  },
+  reducers: {},
 });
 
 const { actions, reducer } = serviceSlice;

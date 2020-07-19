@@ -8,7 +8,7 @@ const initialState = {
   },
 };
 
-const landingPage = createSlice({
+const landingPageSlice = createSlice({
   name: 'landingPage',
   initialState,
   reducers: {
@@ -22,7 +22,7 @@ const landingPage = createSlice({
   },
 });
 
-const { actions, reducer } = landingPage;
+const { actions, reducer } = landingPageSlice;
 
 export const landingPageActions = actions;
 
