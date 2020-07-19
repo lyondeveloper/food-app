@@ -88,7 +88,8 @@ const WebNavbarItems = ({ item, isResponsive = false }) => {
 
     if (element.type === constants.link)
       content = (
-        <Link id={element.id} as={ReachLink} to={element.path} display="block">
+        <Link id={element.id} as={ReachLink} to={element.path} display="flex">
+          <ItemComponent size="24px" />
           {element.label}
         </Link>
       );
