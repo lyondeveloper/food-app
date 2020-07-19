@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch, shallowEqual } from 'react-redux';
+import { Grid } from '@chakra-ui/core';
 import { servicesActions } from '../../redux/services';
 
 import Spinner from '../spinner';
@@ -16,9 +17,11 @@ const Services = () => {
   return (
     <>
       {loading && <Spinner withOverlay />}
-      {services.map((service) => (
-        <h1>{service.title}</h1>
-      ))}
+      <Grid templateColumns="25% 25% 25% 25%">
+        {services.map((service) => (
+          <h1>{service.title}</h1>
+        ))}
+      </Grid>
     </>
   );
 };
