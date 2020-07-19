@@ -1,4 +1,4 @@
-import { MdSearch, MdShoppingCart, MdAccountCircle } from 'react-icons/md';
+import { MdSearch, MdShoppingCart, MdAccountCircle, MdDescription } from 'react-icons/md';
 import userMenu from './user';
 
 export const navigation = {
@@ -7,6 +7,7 @@ export const navigation = {
   signUp: '/sign-up',
   account: '/account',
   checkout: '/checkout',
+  orders: '/orders',
 };
 
 export const constants = {
@@ -80,5 +81,14 @@ export const webNavbarAuthenticated = Object.freeze([
     type: constants.dropdown,
     onClick: () => {},
     childMenu: { ...userMenu },
+  },
+
+  {
+    id: 3,
+    label: 'Orders',
+    name: 'orders',
+    component: MdDescription,
+    path: navigation.orders,
+    type: constants.link,
   },
 ]);

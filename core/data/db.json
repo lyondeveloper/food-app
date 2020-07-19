@@ -1,9 +1,368 @@
 {
-  "user": {
-    "id": 1,
-    "username": "jesusRincon",
-    "name": "Jesus Rincon",
-    "navbarName": "Jesus",
-    "accountType": "consumer"
-  }
+  "user": [
+    {
+      "id": 1,
+      "username": "jesus",
+      "name": "Jesus Rincon",
+      "accountType": "consumer"
+    },
+
+    {
+      "id": 2,
+      "username": "mariale",
+      "name": "Maria Alejandra Diaz",
+      "accountType": "seller"
+    },
+
+    {
+      "id": 3,
+      "username": "manu",
+      "name": "Manuel Cordero",
+      "accountType": "seller"
+    }
+  ],
+
+  "service": {
+    "panga_burguer": {
+      "id": 0,
+      "title": "Panga Burguer",
+      "name": "panga_burguer",
+      "type": "restaurant",
+      "schedule": {
+        "type": "specific",
+        "fromDay": "thursday",
+        "toDay": "sunday",
+        "fromHour": "6pm",
+        "toHour": "10pm"
+      },
+      "menu": {
+        "burguer_pollo": {
+          "id": 0,
+          "name": "burguer_pollo",
+          "label": "Burguer de Pollo",
+          "quantity": 0,
+          "cost": 4,
+          "childItems": [
+            {
+              "id": 0,
+              "label": "Pollo",
+              "priority": true
+            },
+            {
+              "id": 1,
+              "label": "Queso de Mano",
+              "priority": true
+            },
+            {
+              "id": 2,
+              "label": "Tocineta",
+              "priority": true
+            },
+            {
+              "id": 3,
+              "label": "Papa Rallada",
+              "priority": false
+            },
+            {
+              "id": 4,
+              "label": "Lechuga",
+              "priority": false
+            },
+            {
+              "id": 5,
+              "label": "Tomate",
+              "priority": false
+            },
+            {
+              "id": 6,
+              "label": "Cebolla",
+              "priority": false
+            },
+            {
+              "id": 7,
+              "label": "Salsas",
+              "priority": false
+            }
+          ]
+        },
+
+        "burguer_carne": {
+          "id": 0,
+          "name": "burguer_carne",
+          "label": "Burguer de Carne",
+          "quantity": 0,
+          "cost": 4,
+          "childItems": [
+            {
+              "id": 0,
+              "label": "Carne 150gr",
+              "priority": true
+            },
+            {
+              "id": 1,
+              "label": "Queso de Mano",
+              "priority": true
+            },
+            {
+              "id": 2,
+              "label": "Tocineta",
+              "priority": true
+            },
+            {
+              "id": 3,
+              "label": "Papa Rallada",
+              "priority": false
+            },
+            {
+              "id": 4,
+              "label": "Lechuga",
+              "priority": false
+            },
+            {
+              "id": 5,
+              "label": "Tomate",
+              "priority": false
+            },
+            {
+              "id": 6,
+              "label": "Cebolla",
+              "priority": false
+            },
+            {
+              "id": 7,
+              "label": "Salsas",
+              "priority": false
+            }
+          ]
+        },
+
+        "burguer_mixta": {
+          "id": 0,
+          "name": "burguer_mixta",
+          "label": "Burguer Mixta",
+          "quantity": 0,
+          "cost": 4,
+          "childItems": [
+            {
+              "id": 0,
+              "label": "Carne 150gr",
+              "priority": true
+            },
+            {
+              "id": 1,
+              "label": "Queso de Mano",
+              "priority": true
+            },
+            {
+              "id": 2,
+              "label": "Pollo",
+              "priority": true
+            },
+            {
+              "id": 3,
+              "label": "Tocineta",
+              "priority": false
+            },
+            {
+              "id": 4,
+              "label": "Papa Rallada",
+              "priority": false
+            },
+            {
+              "id": 5,
+              "label": "Lechuga",
+              "priority": false
+            },
+            {
+              "id": 6,
+              "label": "Tomate",
+              "priority": false
+            },
+            {
+              "id": 7,
+              "label": "Cebolla",
+              "priority": false
+            },
+            {
+              "id": 8,
+              "label": "Salsas",
+              "priority": false
+            }
+          ]
+        }
+      }
+    }
+  },
+
+  "services": [
+    {
+      "id": 0,
+      "title": "Panga Burguer",
+      "name": "panga_burguer",
+      "type": "restaurant",
+      "schedule": {
+        "type": "specific",
+        "fromDay": "thursday",
+        "toDay": "sunday",
+        "fromHour": "6pm",
+        "toHour": "10pm"
+      },
+      "menu": {
+        "burguer_pollo": {
+          "id": 0,
+          "name": "burguer_pollo",
+          "label": "Burguer de Pollo",
+          "quantity": 0,
+          "cost": 4,
+          "childItems": [
+            {
+              "id": 0,
+              "label": "Pollo",
+              "priority": true
+            },
+            {
+              "id": 1,
+              "label": "Queso de Mano",
+              "priority": true
+            },
+            {
+              "id": 2,
+              "label": "Tocineta",
+              "priority": true
+            },
+            {
+              "id": 3,
+              "label": "Papa Rallada",
+              "priority": false
+            },
+            {
+              "id": 4,
+              "label": "Lechuga",
+              "priority": false
+            },
+            {
+              "id": 5,
+              "label": "Tomate",
+              "priority": false
+            },
+            {
+              "id": 6,
+              "label": "Cebolla",
+              "priority": false
+            },
+            {
+              "id": 7,
+              "label": "Salsas",
+              "priority": false
+            }
+          ]
+        },
+
+        "burguer_carne": {
+          "id": 0,
+          "name": "burguer_carne",
+          "label": "Burguer de Carne",
+          "quantity": 0,
+          "cost": 4,
+          "childItems": [
+            {
+              "id": 0,
+              "label": "Carne 150gr",
+              "priority": true
+            },
+            {
+              "id": 1,
+              "label": "Queso de Mano",
+              "priority": true
+            },
+            {
+              "id": 2,
+              "label": "Tocineta",
+              "priority": true
+            },
+            {
+              "id": 3,
+              "label": "Papa Rallada",
+              "priority": false
+            },
+            {
+              "id": 4,
+              "label": "Lechuga",
+              "priority": false
+            },
+            {
+              "id": 5,
+              "label": "Tomate",
+              "priority": false
+            },
+            {
+              "id": 6,
+              "label": "Cebolla",
+              "priority": false
+            },
+            {
+              "id": 7,
+              "label": "Salsas",
+              "priority": false
+            }
+          ]
+        },
+
+        "burguer_mixta": {
+          "id": 0,
+          "name": "burguer_mixta",
+          "label": "Burguer Mixta",
+          "quantity": 0,
+          "cost": 4,
+          "childItems": [
+            {
+              "id": 0,
+              "label": "Carne 150gr",
+              "priority": true
+            },
+            {
+              "id": 1,
+              "label": "Queso de Mano",
+              "priority": true
+            },
+            {
+              "id": 2,
+              "label": "Pollo",
+              "priority": true
+            },
+            {
+              "id": 3,
+              "label": "Tocineta",
+              "priority": false
+            },
+            {
+              "id": 4,
+              "label": "Papa Rallada",
+              "priority": false
+            },
+            {
+              "id": 5,
+              "label": "Lechuga",
+              "priority": false
+            },
+            {
+              "id": 6,
+              "label": "Tomate",
+              "priority": false
+            },
+            {
+              "id": 7,
+              "label": "Cebolla",
+              "priority": false
+            },
+            {
+              "id": 8,
+              "label": "Salsas",
+              "priority": false
+            }
+          ]
+        }
+      }
+    }
+  ]
 }

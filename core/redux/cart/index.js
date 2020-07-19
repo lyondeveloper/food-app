@@ -49,7 +49,7 @@ const initialState = {
   },
 };
 
-const cart = createSlice({
+const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
@@ -63,7 +63,7 @@ const cart = createSlice({
   },
 });
 
-const { actions, reducer } = cart;
+const { actions, reducer } = cartSlice;
 
 export const cartActions = actions;
 
