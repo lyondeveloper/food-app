@@ -1,9 +1,612 @@
 {
-  "user": {
-    "id": 1,
-    "username": "jesusRincon",
-    "name": "Jesus Rincon",
-    "navbarName": "Jesus",
-    "accountType": "consumer"
-  }
+  "user": [
+    {
+      "id": 1,
+      "username": "jesus",
+      "name": "Jesus Rincon",
+      "accountType": "consumer"
+    },
+
+    {
+      "id": 2,
+      "username": "mariale",
+      "name": "Maria Alejandra Diaz",
+      "accountType": "seller",
+      "service": "panga_burguer"
+    },
+
+    {
+      "id": 3,
+      "username": "manu",
+      "name": "Manuel Cordero",
+      "accountType": "seller",
+      "service": "21_fast_food"
+    },
+
+    {
+      "id": 4,
+      "username": "anes",
+      "name": "Anes Barroteran",
+      "accountType": "seller",
+      "service": "churro_sensation"
+    }
+  ],
+
+  "services": [
+    {
+      "id": 0,
+      "owner": "mariale",
+      "title": "Panga Burguer",
+      "name": "panga_burguer",
+      "slug": "panga-burguer",
+      "type": "restaurant",
+      "logoSrc": "https://www.instagram.com/p/CCjq7QzDlo3/",
+      "foodType": {
+        "name": "burguer",
+        "label": "Burguer"
+      },
+      "payMethod": "cash",
+      "deliveryCost": 5,
+      "direction": {
+        "name": "ciudad_ojeda",
+        "label": "Ciudad Ojeda"
+      },
+      "schedule": {
+        "fromDay": "thursday",
+        "toDay": "sunday",
+        "fromHour": "6pm",
+        "toHour": "10pm"
+      },
+      "menu": {
+        "items": {
+          "burguer_pollo": {
+            "id": 0,
+            "name": "burguer_pollo",
+            "label": "Burguer de Pollo",
+            "quantity": 0,
+            "cost": 4,
+            "childItems": [
+              {
+                "id": 0,
+                "label": "Pollo",
+                "uiPriority": true
+              },
+              {
+                "id": 1,
+                "label": "Queso de Mano",
+                "uiPriority": true
+              },
+              {
+                "id": 2,
+                "label": "Tocineta",
+                "uiPriority": true
+              },
+              {
+                "id": 3,
+                "label": "Papa Rallada"
+              },
+              {
+                "id": 4,
+                "label": "Lechuga"
+              },
+              {
+                "id": 5,
+                "label": "Tomate"
+              },
+              {
+                "id": 6,
+                "label": "Cebolla"
+              },
+              {
+                "id": 7,
+                "label": "Salsas"
+              }
+            ]
+          },
+
+          "burguer_carne": {
+            "id": 1,
+            "name": "burguer_carne",
+            "label": "Burguer de Carne",
+            "quantity": 0,
+            "cost": 4,
+            "childItems": [
+              {
+                "id": 0,
+                "label": "Carne 150gr",
+                "uiPriority": true
+              },
+              {
+                "id": 1,
+                "label": "Queso de Mano",
+                "uiPriority": true
+              },
+              {
+                "id": 2,
+                "label": "Tocineta",
+                "uiPriority": true
+              },
+              {
+                "id": 3,
+                "label": "Papa Rallada"
+              },
+              {
+                "id": 4,
+                "label": "Lechuga"
+              },
+              {
+                "id": 5,
+                "label": "Tomate"
+              },
+              {
+                "id": 6,
+                "label": "Cebolla"
+              },
+              {
+                "id": 7,
+                "label": "Salsas"
+              }
+            ]
+          },
+
+          "burguer_mixta": {
+            "id": 2,
+            "name": "burguer_mixta",
+            "label": "Burguer Mixta",
+            "quantity": 0,
+            "cost": 6,
+            "childItems": [
+              {
+                "id": 0,
+                "label": "Carne 150gr",
+                "uiPriority": true
+              },
+              {
+                "id": 1,
+                "label": "Queso de Mano",
+                "uiPriority": true
+              },
+              {
+                "id": 2,
+                "label": "Pollo",
+                "uiPriority": true
+              },
+              {
+                "id": 3,
+                "label": "Tocineta"
+              },
+              {
+                "id": 4,
+                "label": "Papa Rallada"
+              },
+              {
+                "id": 5,
+                "label": "Lechuga"
+              },
+              {
+                "id": 6,
+                "label": "Tomate"
+              },
+              {
+                "id": 7,
+                "label": "Cebolla"
+              },
+              {
+                "id": 8,
+                "label": "Salsas"
+              }
+            ]
+          },
+
+          "burguer_americana": {
+            "id": 3,
+            "name": "burguer_americana",
+            "label": "Burguer Americana",
+            "quantity": 0,
+            "cost": 5,
+            "childItems": [
+              {
+                "id": 0,
+                "label": "Carne 150gr",
+                "uiPriority": true
+              },
+              {
+                "id": 1,
+                "label": "Queso Amarillo Americano",
+                "uiPriority": true
+              },
+              {
+                "id": 2,
+                "label": "Tocineta",
+                "uiPriority": true
+              },
+              {
+                "id": 3,
+                "label": "Lechuga"
+              },
+              {
+                "id": 4,
+                "label": "Tomate"
+              },
+              {
+                "id": 5,
+                "label": "Cebolla"
+              },
+              {
+                "id": 6,
+                "label": "Salsas"
+              }
+            ]
+          },
+
+          "refresco_2lts": {
+            "id": 0,
+            "name": "refresco_2lts",
+            "label": "Refresco 2Lts",
+            "quantity": 0,
+            "cost": 2
+          },
+
+          "refresco_medio_litro": {
+            "id": 1,
+            "name": "refresco_medio_litro",
+            "label": "Refresco Medio Litro",
+            "quantity": 0,
+            "cost": 1.5
+          },
+
+          "refresco_1lt": {
+            "id": 2,
+            "name": "refresco_1lt",
+            "label": "Refresco 1Lts",
+            "quantity": 0,
+            "cost": 1
+          }
+        },
+
+        "additional": {
+          "queso_de_mano": {
+            "id": 0,
+            "label": "Queso de Mano",
+            "name": "queso_de_mano",
+            "cost": 0.5
+          },
+          "queso_amarillo_americano": {
+            "id": 1,
+            "label": "Queso Amarillo Americano",
+            "name": "queso_amarillo_americano",
+            "cost": 0.5
+          },
+          "tocineta": {
+            "id": 2,
+            "label": "Queso de Mano",
+            "name": "queso_de_mano",
+            "cost": 0.5
+          },
+          "pollo": {
+            "id": 3,
+            "label": "Pollo",
+            "name": "pollo",
+            "cost": 1.5
+          },
+          "carne": {
+            "id": 0,
+            "label": "Carne",
+            "name": "carne",
+            "cost": 1.5
+          }
+        }
+      }
+    },
+
+    {
+      "id": 1,
+      "title": "21 Fast Food",
+      "owner": "manu",
+      "name": "21_fast_food",
+      "type": "restaurant",
+      "slug": "panga-burguer",
+      "deliveryCost": 5,
+      "foodType": {
+        "name": "pepito",
+        "label": "Pepito"
+      },
+      "payMethod": "transfer",
+      "direction": {
+        "name": "ciudad_ojeda",
+        "label": "Ciudad Ojeda"
+      },
+      "bankAccounts": [
+        {
+          "id": 0,
+          "ownerName": "Manuel Cordero",
+          "nationalId": {
+            "country": "venezuela",
+            "value": "17.275.064"
+          },
+          "name": "banesco",
+          "label": "Banesco",
+          "accountNumber": "0134-0407-16-4071034860",
+          "accountType": {
+            "value": "corriente",
+            "label": "Corriente"
+          }
+        }
+      ],
+      "schedule": {
+        "fromDay": "thursday",
+        "toDay": "sunday",
+        "fromHour": "11am",
+        "toHour": "12pm"
+      },
+      "menu": {
+        "items": {
+          "pepito_de_carne": {
+            "id": 0,
+            "name": "pepito_de_carne",
+            "label": "Pepito de Carne",
+            "quantity": 0,
+            "cost": 4
+          },
+
+          "pepito_mixto": {
+            "id": 1,
+            "name": "pepito_mixto",
+            "label": "Pepito Mixto",
+            "quantity": 0,
+            "cost": 4
+          },
+
+          "pepito_pollo": {
+            "id": 2,
+            "name": "pepito_de_pollo",
+            "label": "Pepito de Pollo",
+            "quantity": 0,
+            "cost": 4
+          },
+
+          "pepito_especial": {
+            "id": 3,
+            "name": "pepito_especial",
+            "label": "Pepito Especial",
+            "quantity": 0,
+            "cost": 4
+          },
+
+          "pepito_cheese": {
+            "id": 4,
+            "name": "pepito_cheese",
+            "label": "Pepito Cheese",
+            "quantity": 0,
+            "cost": 4
+          }
+        },
+
+        "additional": null
+      }
+    },
+
+    {
+      "id": 2,
+      "title": "Churro Sensation",
+      "name": "churro_sensation",
+      "type": "restaurant",
+      "slug": "panga-burguer",
+      "deliveryCost": 0,
+      "foodType": {
+        "name": "churro",
+        "label": "Churro"
+      },
+      "direction": {
+        "name": "ciudad_ojeda",
+        "label": "Ciudad Ojeda"
+      },
+      "payMethod": "transfer",
+      "bankAccounts": [
+        {
+          "id": 0,
+          "ownerName": "Anes Barroteran",
+          "nationalId": {
+            "country": "venezuela",
+            "value": "26.317.031"
+          },
+          "name": "banco_de_venezuela",
+          "label": "Banco de Venezuela",
+          "accountNumber": "0102-0392-96-0000315520",
+          "accountType": {
+            "value": "corriente",
+            "label": "Corriente"
+          }
+        },
+
+        {
+          "id": 1,
+          "ownerName": "Ramon Hernandez",
+          "name": "zelle",
+          "email": "rajes34@yahoo.com"
+        }
+      ],
+      "schedule": {
+        "type": "allDays",
+        "fromDay": "thursday",
+        "toDay": "sunday",
+        "fromHour": "12pm",
+        "toHour": "1am"
+      },
+      "menu": {
+        "items": {
+          "churros_10_unidades": {
+            "id": 0,
+            "name": "churros_10_unidades_azucarados",
+            "label": "Churros 10 Unidades Azucarados",
+            "quantity": 0,
+            "cost": 1
+          },
+
+          "churros_y_topping": {
+            "id": 1,
+            "name": "churros_y_topping",
+            "label": "Churros + Topping",
+            "quantity": 0,
+            "cost": 2,
+            "childItems": [
+              {
+                "id": 0,
+                "type": "extra",
+                "label": "Topping de Chocolate"
+              },
+              {
+                "id": 1,
+                "type": "extra",
+                "label": "Topping de Arequipe"
+              }
+            ]
+          },
+
+          "sensatella": {
+            "id": 2,
+            "name": "sensatella",
+            "label": "SensaTella",
+            "quantity": 0,
+            "cost": 3
+          },
+
+          "churros_rellenos": {
+            "id": 3,
+            "name": "churros_rellenos",
+            "label": "Churros Rellenos",
+            "quantity": 0,
+            "cost": 3
+          },
+
+          "sensatwist": {
+            "id": 4,
+            "name": "sensatwist",
+            "label": "SensaTwist (mitad chocolate, mitad arequipe)",
+            "quantity": 0,
+            "cost": 2
+          }
+        },
+
+        "additional": {
+          "doble_topping": {
+            "id": 0,
+            "name": "doble_topping",
+            "label": "Doble topping",
+            "cost": 0.5
+          }
+        }
+      }
+    },
+
+    {
+      "id": 2,
+      "title": "Churro Sensation",
+      "name": "churro_sensation",
+      "type": "restaurant",
+      "foodType": "churro",
+      "slug": "panga-burguer",
+      "deliveryCost": 0,
+      "direction": {
+        "name": "ciudad_ojeda",
+        "label": "Ciudad Ojeda"
+      },
+      "payMethod": "transfer",
+      "bankAccounts": [
+        {
+          "id": 0,
+          "ownerName": "Anes Barroteran",
+          "nationalId": {
+            "country": "venezuela",
+            "value": "26.317.031"
+          },
+          "name": "banco_de_venezuela",
+          "label": "Banco de Venezuela",
+          "accountNumber": "0102-0392-96-0000315520",
+          "accountType": {
+            "value": "corriente",
+            "label": "Corriente"
+          }
+        },
+
+        {
+          "id": 1,
+          "ownerName": "Ramon Hernandez",
+          "name": "zelle",
+          "email": "rajes34@yahoo.com"
+        }
+      ],
+      "schedule": {
+        "type": "allDays",
+        "fromDay": "thursday",
+        "toDay": "sunday",
+        "fromHour": "12pm",
+        "toHour": "1am"
+      },
+      "menu": {
+        "items": {
+          "churros_10_unidades": {
+            "id": 0,
+            "name": "churros_10_unidades_azucarados",
+            "label": "Churros 10 Unidades Azucarados",
+            "quantity": 0,
+            "cost": 1
+          },
+
+          "churros_y_topping": {
+            "id": 1,
+            "name": "churros_y_topping",
+            "label": "Churros + Topping",
+            "quantity": 0,
+            "cost": 2,
+            "childItems": [
+              {
+                "id": 0,
+                "type": "extra",
+                "label": "Topping de Chocolate"
+              },
+              {
+                "id": 1,
+                "type": "extra",
+                "label": "Topping de Arequipe"
+              }
+            ]
+          },
+
+          "sensatella": {
+            "id": 2,
+            "name": "sensatella",
+            "label": "SensaTella",
+            "quantity": 0,
+            "cost": 3
+          },
+
+          "churros_rellenos": {
+            "id": 3,
+            "name": "churros_rellenos",
+            "label": "Churros Rellenos",
+            "quantity": 0,
+            "cost": 3
+          },
+
+          "sensatwist": {
+            "id": 4,
+            "name": "sensatwist",
+            "label": "SensaTwist (mitad chocolate, mitad arequipe)",
+            "quantity": 0,
+            "cost": 2
+          }
+        },
+
+        "additional": {
+          "doble_topping": {
+            "id": 0,
+            "name": "doble_topping",
+            "label": "Doble topping",
+            "cost": 0.5
+          }
+        }
+      }
+    }
+  ]
 }

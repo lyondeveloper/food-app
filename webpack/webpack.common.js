@@ -7,6 +7,12 @@ const commonPaths = require('./paths');
 
 module.exports = {
   entry: commonPaths.entryPath,
+  devServer: {
+    historyApiFallback: true,
+  },
+  output: {
+    publicPath: '/',
+  },
   module: {
     rules: [
       {

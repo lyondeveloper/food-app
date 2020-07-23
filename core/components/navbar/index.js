@@ -7,10 +7,7 @@ import { navigation, webNavbarAuthenticated, webNavbar } from '../../utils/navba
 import WebNavbarItems from './web-navbar-items';
 
 const WebNavbar = () => {
-  const { landingPage: { isResponsive, user: { isAuthenticated } = {} } = {} } = useSelector(
-    (state) => state,
-    shallowEqual,
-  );
+  const { app: { isResponsive, isAuthenticated } = {} } = useSelector((state) => state, shallowEqual);
 
   const render = () => (
     <>
@@ -31,15 +28,23 @@ const WebNavbar = () => {
   );
 
   return (
-    <Flex align="center" justify="space-between" as="nav" wrap="wrap" padding="1.5rem" bg="green.main" color="white">
-      <Flex align="center">
-        <Heading as="h1" size="lg">
-          <Link as={ReachLink} to={navigation.home}>
-            Local Deli
-          </Link>
-        </Heading>
-      </Flex>
-
+    <Flex
+      as="nav"
+      wrap="wrap"
+      align="center"
+      justifyContent="space-between"
+      width="100%"
+      bg="green.main"
+      color="white"
+      padding="1.5rem"
+      position="fixed"
+      zIndex="10"
+    >
+      <Heading as="h1" size="lg">
+        <Link as={ReachLink} to={navigation.home}>
+          Local Deli
+        </Link>
+      </Heading>
       {isResponsive ? <Box display={{ base: 'flex', md: 'none' }}>{render()}</Box> : <Flex>{render()}</Flex>}
     </Flex>
   );

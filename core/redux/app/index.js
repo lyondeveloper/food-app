@@ -1,15 +1,15 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
+import viewOptions from '../../utils/views';
 
 const initialState = {
   isResponsive: false,
-  user: {
-    isAuthenticated: false,
-  },
+  isAuthenticated: true,
+  currentView: viewOptions.home,
 };
 
-const landingPageSlice = createSlice({
-  name: 'landingPage',
+const appSlice = createSlice({
+  name: 'app',
   initialState,
   reducers: {
     setState: (state, { payload: { value, key } }) => {
@@ -22,8 +22,8 @@ const landingPageSlice = createSlice({
   },
 });
 
-const { actions, reducer } = landingPageSlice;
+const { actions, reducer } = appSlice;
 
-export const landingPageActions = actions;
+export const appActions = actions;
 
 export default reducer;

@@ -83,4 +83,13 @@ export const webNavbarAuthenticated = Object.freeze([
     onClick: () => {},
     childMenu: { ...userMenu },
   },
+
+  {
+    id: 3,
+    label: 'Orders',
+    name: 'orders',
+    component: MdDescription,
+    path: navigation.orders,
+    type: constants.link,
+  },
 ]);
