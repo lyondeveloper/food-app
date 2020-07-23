@@ -39,6 +39,30 @@ and classic ReactJS web implementation
 This project is both React Native and ReactJS projects in one big project.
 With the correct babel and webpack implementations, we've been abled to combine the two worlds to dynamically import the correct components into web and mobile views.
 
+## Working with mock data
+
+If you want to work with mock data, please run the following steps
+
+1. npm i -g json-server
+2. Make sure you have a json file in the data folder with the data you want to have
+3. Open up a terminal and run json-server --watch JSON_PATH:
+   ```bash
+      example - json-server --watch ./core/data/db.json
+   ```
+4. Make sure the server is up
+5. Now add data to your json like this (notice that if you create a new property, you will have it available in http://localhost:3000/user or /services)
+
+   ```bash
+       {
+           "user": {},
+           "services": {},
+       }
+   ```
+
+6. Hit the fake api and return the data
+
+This link provides a more detail information of how it works [JSONServer](https://www.npmjs.com/package/json-server)
+
 ## How to make PRs
 
 The first thing you need to know is that all [SoftArs](http://softars.com/) projects will be or are in production and seek to maintain its structure across all the app, with that been said, you should follow the following steps:
@@ -56,6 +80,7 @@ Example:
 4. Make sure to add descriptive title and description once you've raised your PR.
 
 ## General Recommendations and rules
+
 Please follow the next document: https://docs.google.com/document/d/1mN79G1QnL8YKKX9Rvtm3hYOKXeNl2m-4I1vb8vPrw7Q/edit?ts=5eade5b2
 
 ## Company

@@ -38,9 +38,19 @@
       "owner": "mariale",
       "title": "Panga Burguer",
       "name": "panga_burguer",
+      "slug": "panga-burguer",
       "type": "restaurant",
+      "logoSrc": "https://www.instagram.com/p/CCjq7QzDlo3/",
+      "foodType": {
+        "name": "burguer",
+        "label": "Burguer"
+      },
       "payMethod": "cash",
       "deliveryCost": 5,
+      "direction": {
+        "name": "ciudad_ojeda",
+        "label": "Ciudad Ojeda"
+      },
       "schedule": {
         "fromDay": "thursday",
         "toDay": "sunday",
@@ -295,8 +305,17 @@
       "owner": "manu",
       "name": "21_fast_food",
       "type": "restaurant",
+      "slug": "panga-burguer",
       "deliveryCost": 5,
+      "foodType": {
+        "name": "pepito",
+        "label": "Pepito"
+      },
       "payMethod": "transfer",
+      "direction": {
+        "name": "ciudad_ojeda",
+        "label": "Ciudad Ojeda"
+      },
       "bankAccounts": [
         {
           "id": 0,
@@ -372,7 +391,16 @@
       "title": "Churro Sensation",
       "name": "churro_sensation",
       "type": "restaurant",
+      "slug": "panga-burguer",
       "deliveryCost": 0,
+      "foodType": {
+        "name": "churro",
+        "label": "Churro"
+      },
+      "direction": {
+        "name": "ciudad_ojeda",
+        "label": "Ciudad Ojeda"
+      },
       "payMethod": "transfer",
       "bankAccounts": [
         {
@@ -476,7 +504,13 @@
       "title": "Churro Sensation",
       "name": "churro_sensation",
       "type": "restaurant",
+      "foodType": "churro",
+      "slug": "panga-burguer",
       "deliveryCost": 0,
+      "direction": {
+        "name": "ciudad_ojeda",
+        "label": "Ciudad Ojeda"
+      },
       "payMethod": "transfer",
       "bankAccounts": [
         {

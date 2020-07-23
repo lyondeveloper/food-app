@@ -4,8 +4,9 @@ import { Grid } from '@chakra-ui/core';
 import { servicesActions } from '../../redux/services';
 
 import Spinner from '../spinner';
+import ServicePreview from '../service-preview';
 
-const Services = () => {
+const ServicesOverview = () => {
   const dispatch = useDispatch();
 
   const { services: { loading, data: services = [] } = {} } = useSelector((state) => state, shallowEqual);
@@ -17,13 +18,13 @@ const Services = () => {
   return (
     <>
       {loading && <Spinner withOverlay />}
-      <Grid templateColumns="25% 25% 25% 25%">
+      <Grid gridGap={3} templateColumns={{ sm: '1fr', md: '1fr 1fr', lg: '1fr 1fr 1fr', xl: '1fr 1fr 1fr 1fr' }}>
         {services.map((service) => (
-          <h1>{service.title}</h1>
+          <ServicePreview service={service} />
         ))}
       </Grid>
     </>
   );
 };
 
-export default Services;
+export default ServicesOverview;

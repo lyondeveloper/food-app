@@ -9,6 +9,7 @@ import { appActions } from '../../core/redux/app';
 import { isResponsive } from '../../core/utils/device';
 
 const Home = lazy(() => import('../../core/components/home'));
+const Service = lazy(() => import('../../core/components/service'));
 const NotFound = lazy(() => import('../../core/components/not-found'));
 
 const App = () => {
@@ -21,13 +22,16 @@ const App = () => {
   }, []);
 
   return (
-    <Suspense fallback={<WebSpinner withOverlay />}>
+    <>
       <Navbar />
-      <Router>
-        <Home exact path="/" component={Home} />
-        <NotFound default component={NotFound} />
-      </Router>
-    </Suspense>
+      <Suspense fallback={<WebSpinner withOverlay />}>
+        <Router>
+          <Home path="/" component={Home} />
+          <Service path="/service/:slug" component={Service} />
+          <NotFound default component={NotFound} />
+        </Router>
+      </Suspense>
+    </>
   );
 };
 

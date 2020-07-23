@@ -1,17 +1,15 @@
 import React from 'react';
-import { Grid, Box } from '@chakra-ui/core';
+import { Box, Flex } from '@chakra-ui/core';
 
 import ServicesOverview from '../services-overview';
 import SearchBar from '../search-bar';
 
 const Home = () => (
-  <Box height="100vh">
-    <Grid height="100%" justifyContent="center" align="center" templateRows="50% 50%">
-      <Box alignSelf="center">
-        <SearchBar />
-      </Box>
+  <Box position="relative" top="78px">
+    <Flex direction="column" align="center">
+      <SearchBar />
       <ServicesOverview />
-    </Grid>
+    </Flex>
   </Box>
 );
 

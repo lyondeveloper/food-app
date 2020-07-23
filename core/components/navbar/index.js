@@ -29,24 +29,22 @@ const WebNavbar = () => {
 
   return (
     <Flex
-      position="fixed"
-      width="100%"
-      align="center"
-      justify="space-between"
       as="nav"
       wrap="wrap"
-      padding="1.5rem"
+      align="center"
+      justifyContent="space-between"
+      width="100%"
       bg="green.main"
       color="white"
+      padding="1.5rem"
+      position="fixed"
+      zIndex="10"
     >
-      <Flex align="center">
-        <Heading as="h1" size="lg">
-          <Link as={ReachLink} to={navigation.home}>
-            Local Deli
-          </Link>
-        </Heading>
-      </Flex>
-
+      <Heading as="h1" size="lg">
+        <Link as={ReachLink} to={navigation.home}>
+          Local Deli
+        </Link>
+      </Heading>
       {isResponsive ? <Box display={{ base: 'flex', md: 'none' }}>{render()}</Box> : <Flex>{render()}</Flex>}
     </Flex>
   );
