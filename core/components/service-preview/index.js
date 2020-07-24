@@ -25,7 +25,7 @@ const ServicePreview = ({ service }) => {
       <Link to={`/service/${service.slug}`} as={ReachLink} _hover={{ textDecoration: 'none' }}>
         <Image src="https://bit.ly/2Z4KKcF" />
 
-        <Grid templateRows="1fr 1fr 1fr 1fr" direction="column" paddingX="10px">
+        <Grid templateRows="1fr 1fr 1fr" direction="column" paddingX="10px">
           <Flex align="flex-start" direction="column">
             <Heading fontSize="20px" mt="1" fontWeight="bold" as="span">
               {service.title}
