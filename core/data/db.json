@@ -29,6 +29,14 @@
       "name": "Anes Barroteran",
       "accountType": "seller",
       "service": "churro_sensation"
+    },
+
+    {
+      "id": 5,
+      "username": "fati",
+      "name": "Fatima Do Nascimiento",
+      "accountType": "seller",
+      "service": "panqueland"
     }
   ],
 
@@ -500,110 +508,37 @@
     },
 
     {
-      "id": 2,
-      "title": "Churro Sensation",
-      "name": "churro_sensation",
+      "id": 3,
+      "owner": "fati",
+      "title": "Panqueland",
+      "name": "panqueland",
       "type": "restaurant",
-      "foodType": "churro",
-      "slug": "panga-burguer",
-      "deliveryCost": 0,
+      "slug": "panqueland",
+      "deliveryCost": 2,
       "direction": {
         "name": "ciudad_ojeda",
         "label": "Ciudad Ojeda"
       },
-      "payMethod": "transfer",
-      "bankAccounts": [
-        {
-          "id": 0,
-          "ownerName": "Anes Barroteran",
-          "nationalId": {
-            "country": "venezuela",
-            "value": "26.317.031"
-          },
-          "name": "banco_de_venezuela",
-          "label": "Banco de Venezuela",
-          "accountNumber": "0102-0392-96-0000315520",
-          "accountType": {
-            "value": "corriente",
-            "label": "Corriente"
-          }
-        },
-
-        {
-          "id": 1,
-          "ownerName": "Ramon Hernandez",
-          "name": "zelle",
-          "email": "rajes34@yahoo.com"
-        }
-      ],
+      "foodType": {
+        "name": "panquecas",
+        "label": "Panquecas"
+      },
+      "payMethod": "cash",
       "schedule": {
         "type": "allDays",
-        "fromDay": "thursday",
+        "fromDay": "monday",
         "toDay": "sunday",
-        "fromHour": "12pm",
-        "toHour": "1am"
+        "fromHour": "10am",
+        "toHour": "6pm"
       },
       "menu": {
         "items": {
-          "churros_10_unidades": {
+          "panquecoco": {
             "id": 0,
-            "name": "churros_10_unidades_azucarados",
-            "label": "Churros 10 Unidades Azucarados",
-            "quantity": 0,
-            "cost": 1
-          },
-
-          "churros_y_topping": {
-            "id": 1,
-            "name": "churros_y_topping",
-            "label": "Churros + Topping",
-            "quantity": 0,
-            "cost": 2,
-            "childItems": [
-              {
-                "id": 0,
-                "type": "extra",
-                "label": "Topping de Chocolate"
-              },
-              {
-                "id": 1,
-                "type": "extra",
-                "label": "Topping de Arequipe"
-              }
-            ]
-          },
-
-          "sensatella": {
-            "id": 2,
-            "name": "sensatella",
-            "label": "SensaTella",
-            "quantity": 0,
-            "cost": 3
-          },
-
-          "churros_rellenos": {
-            "id": 3,
-            "name": "churros_rellenos",
-            "label": "Churros Rellenos",
-            "quantity": 0,
-            "cost": 3
-          },
-
-          "sensatwist": {
-            "id": 4,
-            "name": "sensatwist",
-            "label": "SensaTwist (mitad chocolate, mitad arequipe)",
+            "name": "panquecoco",
+            "label": "3 panquecas rellenas de chocolate y oreo",
             "quantity": 0,
             "cost": 2
-          }
-        },
-
-        "additional": {
-          "doble_topping": {
-            "id": 0,
-            "name": "doble_topping",
-            "label": "Doble topping",
-            "cost": 0.5
           }
         }
       }
