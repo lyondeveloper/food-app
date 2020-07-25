@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { InputGroup, InputLeftElement, Input, FormControl, FormErrorMessage } from '@chakra-ui/core';
+import { MdClear } from 'react-icons/md';
+import { InputGroup, InputLeftElement, Input, FormControl, InputRightElement } from '@chakra-ui/core';
 
-const LabelGroup = ({ onSubmit, field, register, layout, error }) => {
+const LabelGroup = ({ onSubmit, field, register, layout, error, onClear }) => {
   const Icon = layout.icon;
 
   const onKeyPress = (e) => {
@@ -19,7 +20,9 @@ const LabelGroup = ({ onSubmit, field, register, layout, error }) => {
           <Icon size="24px" name={field.name} color={layout.iconColor} />
         </InputLeftElement>
         <Input onKeyPress={onKeyPress} placeholder={field.placeholder} ref={register} name={field.name} />
-        {error && <FormErrorMessage>{error.message}</FormErrorMessage>}
+        <InputRightElement>
+          <MdClear onClick={onClear} size="24px" name={field.name} color={layout.iconColor} />
+        </InputRightElement>
       </InputGroup>
     </FormControl>
   );
@@ -31,6 +34,7 @@ LabelGroup.propTypes = {
   error: PropTypes.objectOf(PropTypes.string).isRequired,
   register: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  onClear: PropTypes.func.isRequired,
 };
 
 export default LabelGroup;
