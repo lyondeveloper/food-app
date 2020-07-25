@@ -7,10 +7,15 @@ import { servicesActions } from '../../redux/services';
 
 const SearchBar = () => {
   const dispatch = useDispatch();
-  const { handleSubmit, register, errors } = useForm();
+  const { handleSubmit, register, errors, reset } = useForm();
 
   const onSubmit = ({ globalSearch: value }) => {
     dispatch(servicesActions.getServices(value));
+  };
+
+  const onClear = () => {
+    reset();
+    dispatch(servicesActions.getServices());
   };
 
   const validateField = (value) => {
@@ -23,6 +28,7 @@ const SearchBar = () => {
     <form>
       <LabelGroup
         onSubmit={handleSubmit(onSubmit)}
+        onClear={onClear}
         field={data}
         layout={layout}
         error={errors[data.name]}

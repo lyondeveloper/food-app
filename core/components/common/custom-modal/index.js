@@ -18,7 +18,7 @@ const CustomModal = ({ isOpen, onClose, menu, children }) => {
   return (
     <Modal id={id} isOpen={isOpen} onClose={onClose}>
       <ModalOverlay />
-      <ModalContent>
+      <ModalContent id={id}>
         <ModalHeader>
           <Text fontSize="3xl">{title}</Text>
           from
@@ -29,7 +29,7 @@ const CustomModal = ({ isOpen, onClose, menu, children }) => {
 
         <ModalCloseButton />
 
-        <ModalBody>{children}</ModalBody>
+        <ModalBody id={id}>{children}</ModalBody>
 
         <ModalFooter>
           <WebButton title="Go to Checkout" />
